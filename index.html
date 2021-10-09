@@ -2,15 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="h-screen bg-gray-100 w-full">
+    <div id="app" class="h-full w-full bg-gray-900">
+    <div id="header" class="p-2 px-10 h-[48px] bg-gray-800 text-green-400">
+      qr.safesuk.dev
+    </div>
+    <div id="main" class="flex justify-center items-center">
+      <div class="space-y-4 max-w-[300px] w-[300px] mt-24">
+        <input id="inpuText" type="text" class="bg-gray-800 text-green-400 h-2rem w-full p-2 rounded-md appearance-none outline-none" placeholder="type here...">
+        <img src="" id="qrcode" alt="QR" class="rounded-md bg-gray-800 h-[300px] w-[300px]">
+        <div id="text" class="text-white"></div>
+      </div>
+    </div>
+  </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
 
 <style>
+</style>
+
+<style>
+  html, body{
+    margin: 0;
+  }
 </style>

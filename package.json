@@ -11,5 +11,8 @@
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.16",
     "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "qrcode": "^1.4.4"
   }
 }
