@@ -16,7 +16,7 @@ const generateQR = async (text) => {
   }
 };
 
-const processQRImage = async (text = "safesuk.dev") => {
+const processQRImage = async (text = "") => {
   const imageQr = (await generateQR(text)) || DEFAULT_IMG;
   const img = document.getElementById("qrcode");
   img.setAttribute("src", imageQr);
