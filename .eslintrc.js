@@ -3,18 +3,29 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
-    'jest/globals': true,
-    'cypress/globals': true
+    jest: true
   },
   extends: [
-    'standard',
-    'plugin:jest/recommended',
-    'plugin:cypress/recommended'
+    'standard'
   ],
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module'
   },
   rules: {
-  }
+  },
+  overrides: [
+    {
+      files: ['test/**/*.spec.js'],
+      extends: [
+        'plugin:jest/recommended'
+      ]
+    },
+    {
+      files: ['./e2e/**/*.spec.js'],
+      extends: [
+        'plugin:cypress/recommended'
+      ]
+    }
+  ]
 }
