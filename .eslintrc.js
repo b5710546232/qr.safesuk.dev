@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: ['jest', 'cypress'],
   env: {
     browser: true,
     es2021: true,
@@ -9,6 +8,7 @@ module.exports = {
   },
   extends: [
     'standard',
+    'plugin:jest/recommended',
     'plugin:cypress/recommended'
   ],
   parserOptions: {
